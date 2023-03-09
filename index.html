@@ -1,276 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>::Cafeína Team::</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
-	<!-- CSS by Cafeína Team -->
-	<link href="css/interface.css" rel="stylesheet">
-	<!-- Menu Parallax -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	
-	<script type="text/javascript">
-	
-	jQuery(document).ready(function($){
-		$(".scroll").click(function(event){
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},800);
-		});
-		});
-	</script>  
-	
-	  
-	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/manifest.json">
-	<link rel="icon" href="favicon/favicon.ico">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	  
-	  
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet" />
+    <!-- CSS by Cafeína Team -->
+    <link href="css/interface.css" rel="stylesheet" />
+    <!-- Menu Parallax -->
+    <style>
+      .teste {
+        background-image: url("site-1.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 700px;
+      }
+      .teste2 {
+        background-image: url("site-2.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 700px;
+      }
+      .teste3 {
+        background-image: url("site-3.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 700px;
+      }
+      .teste4 {
+        background-image: url("site-4.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 700px;
+      }
+      .teste5 {
+        background-image: url("site-5.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 2500px;
+      }
+      .teste6 {
+        background-image: url("site-6.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 6500px;
+        width: 100%;
+      }
+      section {
+        margin: 0;
+      }
+    </style>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $("html,body").animate({ scrollTop: $(this.hash).offset().top }, 800);
+        });
+      });
+    </script>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/manifest.json" />
+    <link rel="icon" href="favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand"><h1 class="logo">Cafeína</h1></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a href="#home" class="scroll"><span class="nav-link">Home</span> <span class="sr-only">(current)</span></a>
+            <a href="#home" class="scroll"
+              ><span class="nav-link">Home</span>
+              <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
-			  <a  href="#ocean" class="scroll"><span class="nav-link">Ocean Ride</span></a>
+            <a href="#ocean" class="scroll"
+              ><span class="nav-link">Ocean Ride</span></a
+            >
           </li>
-		<li class="nav-item">
-			<a  href="#cafeina" class="scroll"><span class="nav-link">Cafeína Team</span></a>
+          <li class="nav-item">
+            <a href="#cafeina" class="scroll"
+              ><span class="nav-link">Cafeína Team</span></a
+            >
           </li>
           <li class="nav-item dropdown">
-  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Something else here</a>
-    </div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           </li>
         </ul>
-</div>
+      </div>
     </nav>
-	<span id="home"></span>
-	  <br><br>
-    <section>
-      <div class="jumbotron text-center mt-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-		<div class="winner">
-			<h2>Cafeína Team</h2>
-			<p><b>Cafeína</b> has received the following awards and nominations. Way to go!</p>
-				
-			<div class="winneriten">	
-			  <h3 class="hardware"><img src="images_site/premio_nasa.png" width="60" height="93" alt="Best Use of Hardware"/><span>Best Use of Hardware</span></h3>
-			</div>	
-				
-			<div class="winneriten">	
-			  <h3 class="hardware"><img class="hardwareicon" src="images_site/hardware.svg" alt=""/><p>The solution that exemplifies the most innovative use of hardware.</p></h3>
-			</div>
-				
-		</div>
-			<span id="ocean"></span>
-				<br><br><br><br>
-			<h2>Ocean Ride</h2>
-              <p class="video"><iframe src="https://www.youtube.com/embed/ybJtCZdCWM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-              <p class="bodytext">Ocean Ride is here to remove marine microplastic with creative, simple, inexpensive solutions that already take advantage of existing resources.</p>
-			<div class="row">
-          <div class="col-md-6 col-12 text-center">
-            <img class="img-fluid" src="images_site/ocean_ride_vista_lateral.png" alt="Side view of Ocean Ride">
-            <h4>Ocean Ride Model 1</h4>
-            <h6>Side view of Ocean Ride</h6>
-          </div>
-          <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
-            <img class="img-fluid" src="images_site/ocean_ride_vista_frontal.png" alt="Perspective view of Ocean Ride">
-            <h4>Ocean Ride Model 2</h4>
-            <h6>Perspective view of Ocean Ride</h6>
-          </div>
-        </div>	
-		<h3>1st What is the Ocean Ride ?</h3>
-
-<p class="bobytext">Ocean Ride is a microplastic collection system that works differently than others. In this project we have two main products: first use as a dockable object on any boat and in addition be a fixed platform strategically positioned in the areas of sea currents that is where has the largest flow of these materials.</p>
-
-<p class="bobytext">The system will use the Van Der Graff generator principle to attract micro plastic through an electrostatic current and store this debris inside a container.</p>
-
-		<h3>2nd Applicability and Feasibility:</h3>
-
-<p class="bobytext">FACILITY: First we will use thousands of existing vessels that make trips around the entire maritime territory, docking our collection system to take advantage of the sea routes and use them to our advantage and helping to clean up the ocean. Moreover, on fixed platforms we will take advantage of the sea currents that converge to a strategic place that throws the waste towards the positioning of our platform.</p>
-				
-		    <img class="sealanes" src="images_site/rotas_maritimas.png" width="720" height="319" alt="Figure 1: Sea lanes"/>
-				<p class="font-italic">Figure 1: Sea lanes</p>
-		
-<p class="bobytext">ECONOMIC FEASIBILITY: The economic viability will make companies embrace our solution, while enabling sustainability and cleanliness of the ocean, will provide additional profit for ship companies. In addition, NASA will have a low cost to implement.</p>
-
-<p class="bobytext">COMPANY IMAGE: The company will be associated with a sustainable image, and consequently will generate a competitive differential that will help in the formation of new business, besides being able to achieve a stronger partnership with the clients interested in this image.</p>
-
-				<h3>3rd Solution</h3>
-<p class="bobytext">Van Der Graff's generator principle is the heart of the project, and it is responsible for all the attraction of microplastics across a specific field to attract only that plastic. The device works similar to a magnet. In addition, there is a conveyor belt that, when it comes into contact with the Van Der Graff generator orb, will be electrified and attract our debris, but in order not only to guarantee the electrostatic charge on the conveyor belts, a blade mechanism with a maximum hole size of 5mm. will be inserted into the treadmill.</p>
-
-<p class="bobytext">Right after the process of attracting the microplastic, we will store this waste, compacting it to optimize as much space as possible.</p>
-
-<p class="bobytext">After the maximum storage capacity, this waste will be removed at the destination of the vessel or if it is the fixed platform there will be a vessel responsible only for changing containers, removing the full and replacing it for a void.</p>		
-
-<img class="oceanvista" src="images_site/ocean_ride_vistas_tecnica_Prancheta 1.png" width="854" height="480" alt="Figure 2: Device on the outside"/>
-<p class="font-italic">Figure 2: Device on the outside</p>		
-
-<img class="oceanvista" src="images_site/ocean_ride_vistas_tecnica-02.png" width="854" height="480" alt="Figure 3: Device inside"/> </div>
-<p class="font-italic">Figure 3: Device inside</p>
-
-	<div class="refences">			  
-		<h4 class="referencestitle">REFERENCES</h4>
-		<ol>
-		  <li>OLIVATTO, Glaucia <em>et al</em>. Microplásticos: Contaminantes de Preocupação Global no Antropoceno. Microplásticos, [<em>S. l.</em>], p. 22, 4 nov. 2018.</li>
-		  <li>GOVERNAMENTAL (EUA). PODAAC. Ocean Currents &amp; Circulation. Measurements, [<em>S. l.</em>], n. 1, p. 1, 1 jun. 2018. available in: <a href="https://podaac.jpl.nasa.gov/OceanCurrentsCirculation" target="_blank">https://podaac.jpl.nasa.gov/ OceanCurrentsCirculation</a>. Acesso em: 19 out. 2019.</li>
-		  <li>PRIVADA (Brasil). Sabrae. Sustentabilidade. Sustentabilidade , [<em>S. l.</em>], n. 1, p. 1, 27 jul. 2018. available in: <a href="http://sustentabilidade.sebrae.com.br/sites/Sustentabilidade" target="_blank">http://sustentabilidade.sebrae.com.br/ sites/Sustentabilidade</a>. Acesso em: 19 out. 2019.</li>
-		  <li>GOVERNAMENTAL (Brasil). Pegada Ecológica. Pegada ecológica. Sustentabilidade , [<em>S. l.</em>], n. 1, p. 1, 26 out. 2018. available in: <a href="http://www.pegadaecologica.org.br/2015/index.php" target="_blank">http://www.pegadaecologica.org.br/ 2015/index.php</a>. Acesso em: 19 out. 2019.</li>
-		  <li>GOVERNAMENTAL (EUA). Spaceappschallenge. Trash Cleanup. Trash Cleanup, [<em>S. l.</em>], n. 1, p. 1, 1 out. 2019. available in: <a href="https://2019.spaceappschallenge.org/challenges/earths-oceans/trash-cleanup/details" target="_blank">https://2019.spaceappschallenge.org/ challenges/earths-oceans/trash-cleanup/details</a>. Acesso em: 19 out. 2019.</li>
-		  <li>GOVERNAMENTAL (EUA). PODAAC. Ocean Currents &amp; Circulation. Mesurements, [<em>S. l.</em>], n. 1, p. 1, 1 out. 2019. available in: <a href="https://podaac.jpl.nasa.gov/OceanCurrentsCirculation" target="_blank">https://podaac.jpl.nasa.gov/ OceanCurrentsCirculation</a>. Acesso em: 19 out. 2019.</li>
-		  <li>GOVERNAMENTAL (EUA). PODAAC. NASA and NOAA Altimetric and Ocean Surface Topography Data Information. Intro, [<em>S. l.</em>], n. 1, p. 1, 1 out. 2019. available in: <a href="https://podaac.jpl.nasa.gov/Altimetric_Data_Information" target="_blank">https://podaac.jpl.nasa.gov/ Altimetric_Data_Information</a>. Acesso em: 19 out. 2019.</li>
-		  <li>GOVERNAMENTAL (EUA). NASA. Scatterometry. MEASURING OCEAN WINDS FROM SPACE, [<em>S. l.</em>], n. 1, p. 1, 1 out. 2019. available in: <a href="https://winds.jpl.nasa.gov/aboutscatterometry/history/" target="_blank">https://winds.jpl.nasa.gov/ aboutscatterometry/history/</a>. Acesso em: 19 out. 2019.</li>
-		  <li>GOVERNAMENTAL (EUA). NASA. Ocean Color Feature. Eddies in the Strait of Hormuz, [<em>S. l.</em>], n. 1, p. 1, 1 out. 2019. available in: <a href="https://oceancolor.gsfc.nasa.gov/" target="_blank">https://oceancolor.gsfc.nasa.gov/</a>. Acesso em: 19 out. 2019.</li>
-		</ol>
-	</div>
-  
-          </div>
-        </div>
-      </div>
-    </section>
-	<span id="cafeina"></span>  
-	<br><br><br><br>  
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1>The Cafeína Team</h1>
-		    <img class="imageteam" src="images_site/cafeina_team.jpg" width="940" height="644" alt="Team of students awarded by NASA: Antônio, Pedro, Ramon, Genilson and Thiago (Marina Silva / CORREIO Newspaper)"/>
-			  <p class="font-italic">Team of students awarded by NASA: Antônio, Pedro, Ramon, Genilson and Thiago (Marina Silva / CORREIO Newspaper)</p>
-			  <h3>Nasa-awarded Bahians surpassed 83 countries:'We didn't expect'</h3>
-			<p class="bobytext">Young people won around the world with a project to care for the oceans; they go to the USA to present the project A businessman who got on the bus, a country boy who comes to the capital to study. Another who dreamed of getting to know Disney and as a child wanted to be an astronaut. Someone who needs to work all day and study at night. The future administrator who dreams of doing something big and helping others. Looking at the distance, although quite different, the profiles can fit the stories of many students. The feat of these five Bahians, however, is unique: the team won the largest Hackathon in the world, promoted by Nasa - the Nasa Space Apps Challenge 2019 - and now prepares the bags to visit the headquarters of the entity in the United States (USA).</p>
-			<p class="bobytext">With the name of Ocean Ride, the boys' project created a device to collect plastic microparticles from the waters, helping to clean them. To perform the 'service', the device would be attached to large vessels such as cruise ships, cargo ships or oil platforms and would act as a 'magnet' at sea. As a prize, young people will visit NASA's Kennedy Space Center in Florida, United States, and will have the opportunity to present the project to the American Aerospace Agency.</p>
-			<p class="bobytext">To see the full report, go <a href="https://www.correio24horas.com.br/noticia/nid/baianos-premiados-pela-nasa-superaram-83-paises-nao-esperavamos/" target="_blank">here</a>.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-	  
-    <section class="team">
-      <div class="container mt-2">
-        <div class="row">
-			
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="images_site/antonio_site.png" alt="Antônio Vitor Rocha Casais de Jesus">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">Antônio Vitor Rocha Casais de Jesus</h5>
-                  <p>“It is a dream come true, when you are a child you dream of being an astronaut and when you enter an event like this you see the possibilities that are many. In high school I was too focused to pass the entrance exam, because I knew the difficulties that those who come from public schools face”.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-			
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="images_site/genilson_site.png" alt="Genilson Brito de Oliveira Junior">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">Genilson Brito de Oliveira Junior</h5>
-                  <p>“Since I was a kid, I always wanted to be an entrepreneur doing something related to innovation and I thought that the best thing for me would be adm for the skills you develop there”.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-			
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="images_site/pedro_site.png" alt="Pedro Gabriel Noronha Dantas">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">Pedro Gabriel Noronha Dantas</h5>
-                  <p>“Since I was a kid I always wanted to be an engineer, I always tread the path to engineering but in high school I got closer to communication, to people. and I went from more technical to less technical, until I got to production engineering. Then I was asked if I wanted to be an engineer or administrator and I realized that managing was what I wanted and I changed my options two days before the Sisu deadline”.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-			
-			<div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="images_site/ramon_site.png" alt="Ramon Santos de Almeida do Carmo">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">Ramon Santos de Almeida do Carmo</h5>
-                  <p>“I remembered the Van Der Graff generator, I did some tests with plastic and it worked. Then we went to think about how to actually apply it”.</p>
-                </div>
-              </li>
-            </ul>
-			</div>
-			
-			<div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="images_site/thiago_site.png" alt="Thiago Barbosa de Oliveira">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">Thiago Barbosa de Oliveira</h5>
-                  <p>“Still about 14 years old, I already wanted to have my things, and I started to work selling collectively. I didn't even know Salvador properly, I lost myself in my own neighborhood, but I wanted to have my money. Once, working, I passed UCSAL and thought: I will never step here. When I did, my mind opened. Now I know that I can find NASA, Silicon Valley,”.</p>
-                </div>
-              </li>
-            </ul>
-      		</div>
-		  
-		  </div>
-		</div>
-    </section>
-    
-
-    <div class="section" id="bg_team">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-12">
-            <h3 class="text-center">Where we are</h3>
-            <p align="center"><a href="https://www.youtube.com/channel/UCk_6PDwjNjabjhXO3Cin3dw" target="_blank" class="youtube">Youtube</a></p>
-			<p align="center"><a href="https://www.instagram.com/equipecafeina/" target="_blank" class="instagram">Instagram</a></p><br>
-
-			  
-          </div>
-          <div class="col-md-4 col-12">
-            <h3 class="text-center">GET IN TOUCH</h3>
-            <address class="text-center">
-              <strong>Cafeína Team</strong><br>
-              UFBA Business School - 2nd floor NEA<br>
-            Avenue Reitor Miguel Calmon s/n  - Canela Valley, <br>
-Salvador - BA, Brazil<br>
-Postal Code: 40110-903,<br>
-            </address>
-          </div>
-          
-        </div>
-      </div>
+    <div>
+      <section><div class="teste"></div></section>
+      <section><div class="teste2"></div></section>
+      <section><div class="teste3"></div></section>
+      <section><div class="teste4"></div></section>
+      <section><div class="teste5"></div></section>
+      <section><div class="teste6"></div></section>
     </div>
-    <hr>
+    <hr />
     <footer class="text-center">
       <div class="container">
         <div class="row">
@@ -285,9 +215,9 @@ Postal Code: 40110-903,<br>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.3.1.js"></script>
-	  
-	  <div class="home_boton">
-        	<a href="#home" class="scroll">topo</a>
-      </div>
+
+    <div class="home_boton">
+      <a href="#home" class="scroll">topo</a>
+    </div>
   </body>
 </html>
