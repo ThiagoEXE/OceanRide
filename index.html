@@ -11,56 +11,185 @@
     <link href="css/interface.css" rel="stylesheet" />
     <!-- Menu Parallax -->
     <style>
-      .teste {
-        background-image: url("site-1.png");
+      @font-face {
+        font-family: "Acumin Pro Medium";
+        src: url("fontes/acumin-pro-medium.ttf");
+      }
+      @font-face {
+        font-family: "Acumin Pro Regular";
+        src: url("fontes/acumin-pro-regular.ttf");
+      }
+      @font-face {
+        font-family: "Bebas Neue Bold";
+        src: url("fontes/bebas-neue-bold.otf");
+      }
+      @font-face {
+        font-family: "Bebas Neue Midle";
+        src: url("fontes/bebas-neue-pro-middle.ttf");
+      }
+      .equipe {
+        background-image: url("imagens-v-1.0/equipe.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 700px;
+        margin-top: 7%;
+      }
+      .foguete-nasa {
+        background-image: url("imagens-v-1.0/foguete-nasa.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         height: 700px;
       }
-      .teste2 {
-        background-image: url("site-2.png");
+
+      .tripulacao {
+        background-image: url("imagens-v-1.0/tripulacao.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         height: 700px;
       }
-      .teste3 {
-        background-image: url("site-3.png");
+      .quadro-branco {
+        background-color: #1ab3de;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        height: 700px;
+        height: 650px;
       }
-      .teste4 {
-        background-image: url("site-4.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        height: 700px;
+      .quadro-branco h1 {
+        font-family: "Bebas Neue Bold";
+        /*color: #1AB3DE;*/
+        text-align: center; /* Centraliza o texto horizontalmente */
+        font-size: 50pt;
+        color: white;
+        margin-bottom: 50%;
       }
-      .teste5 {
-        background-image: url("site-5.jpg");
+      .ocean-ride {
+        background-image: url("imagens-v-1.0/ocean-ride.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         width: 100%;
         height: 2500px;
       }
-      .teste6 {
-        background-image: url("site-6.jpg");
+      .ocean-ride .sobre {
+        font-family: "Acumin Pro Regular";
+        text-align: center;
+        margin-top: 35%;
+        width: 60%;
+        margin-left: 20%;
+        font-size: 15pt;
+      }
+      .ocean-ride .aplicabilidade {
+        font-family: "Acumin Pro Regular";
+        text-align: center;
+        margin-top: 70%;
+        width: 60%;
+        margin-left: 20%;
+        font-size: 15pt;
+      }
+      .ocean-ride-vista-lateral img {
+        margin-top: 10%;
+        margin-left: 175%;
+      }
+      .ocean-ride-vista-frontal img {
+        margin-top: 20%;
+        margin-left: -60%;
+        height: 75%;
+      }
+      .ocean-ride-vista-frontal h3 {
+        font-family: "Bebas Neue Bold";
+        margin-left: -70%;
+      }
+      .ocean-ride-vista-frontal h6 {
+        font-family: "Bebas Neue Midle";
+        margin-left: -70%;
+      }
+
+      .ocean-ride-vista-lateral h3 {
+        font-family: "Bebas Neue Bold";
+        margin-left: 250%;
+        width: 300%;
+      }
+      .ocean-ride-vista-lateral h6 {
+        font-family: "Bebas Neue Midle";
+        margin-left: 250%;
+        width: 300%;
+      }
+      .solucao {
+        background-image: url("imagens-v-1.0/solucao.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         height: 6500px;
         width: 100%;
       }
+      .solucao .part1{
+        font-family : "Acumin Pro Regular";
+        color: white;
+        margin-top: 100%;
+        margin-left: 30%;
+        position: absolute; /* Posição absoluta é importante para posicionar o texto */
+        transform: translate(-50%, -50%); /* Centraliza o texto na div */
+        text-align: justify; /* Centraliza o texto horizontalmente */
+        font-size: 3rem; /* Define o tamanho da fonte do texto */
+        left: 10%; /* Posiciona o lado esquerdo do texto no meio da div */
+        width: 80%;
+
+      }
       section {
         margin: 0;
       }
-    </style>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
 
+      .foguete-nasa h1 {
+        font-family: "Bebas Neue Bold";
+        font-weight: bold;
+        margin-top: 50%;
+        position: absolute; /* Posição absoluta é importante para posicionar o texto */
+        top: 50%; /* Posiciona o topo do texto no meio da div */
+        left: 31%; /* Posiciona o lado esquerdo do texto no meio da div */
+        transform: translate(-50%, -50%); /* Centraliza o texto na div */
+        color: #cb104e; /* Define a cor do texto */
+        text-align: center; /* Centraliza o texto horizontalmente */
+        font-size: 3rem; /* Define o tamanho da fonte do texto */
+      }
+      .foguete-nasa h6 {
+        font-family: "Acumin Pro Medium";
+        margin-top: 50%;
+        position: absolute; /* Posição absoluta é importante para posicionar o texto */
+        top: 65%; /* Posiciona o topo do texto no meio da div */
+        left: 24%; /* Posiciona o lado esquerdo do texto no meio da div */
+        transform: translate(-50%, -50%); /* Centraliza o texto na div */
+        color: #2796b4; /* Define a cor do texto */
+        text-align: center; /* Centraliza o texto horizontalmente */
+        text-transform: uppercase;
+        font-size: 15pt;
+      }
+      .foguete-nasa p {
+        font-family: "Acumin Pro Medium";
+        font-weight: bold;
+        margin-top: 35%;
+        position: absolute; /* Posição absoluta é importante para posicionar o texto */
+        top: 120%; /* Posiciona o topo do texto no meio da div */
+        left: 29%; /* Posiciona o lado esquerdo do texto no meio da div */
+        transform: translate(-50%, -50%); /* Centraliza o texto na div */
+        color: #0d4859; /* Define a cor do texto */
+        text-align: justify; /* Centraliza o texto horizontalmente */
+        font-size: 12pt;
+        width: 50%;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue+Pro:wght@700&display=swap"
+    />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
         $(".scroll").click(function (event) {
@@ -71,83 +200,6 @@
     </script>
 
     <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/manifest.json" />
-    <link rel="icon" href="favicon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -193,12 +245,93 @@
       </div>
     </nav>
     <div>
-      <section><div class="teste"></div></section>
-      <section><div class="teste2"></div></section>
-      <section><div class="teste3"></div></section>
-      <section><div class="teste4"></div></section>
-      <section><div class="teste5"></div></section>
-      <section><div class="teste6"></div></section>
+      <section>
+        <div class="equipe"></div>
+      </section>
+      <section>
+        <div class="foguete-nasa">
+          <h1>OF BRAZIL’S CITY SALVADOR <br />TO THE WORLD</h1>
+          <h6>impacting the region and transforming lives</h6>
+          <p>
+            The team made a significant impact on the number of participants in
+            2021 was the city among the 45 with the most participants, ranking
+            6th among 320 cities in the world.
+            <br /><br />
+            Our big impact today is EDUCATION. We make ourselves available to
+            talk to other young people and teenagers who already have an
+            interest in entrepreneurship, innovation, and having a positive
+            impact on the world. For this reason, we actively participate in
+            Hack at Schools, an initiative that takes the hackathons methodology
+            to children and teenagers in public schools, impacting over 600
+            teenagers in a total of 4 public schools.
+          </p>
+        </div>
+      </section>
+      <section><div class="tripulacao"></div></section>
+      <section>
+        <div class="quadro-branco">
+          <h1>
+            OUR TRANSFORMING<br />
+            CREATION: OCEAN RIDE
+          </h1>
+        </div>
+      </section>
+      <section>
+        <div class="ocean-ride">
+          <div class="row">
+            <div class="ocean-ride-vista-lateral">
+              <img
+                src="imagens-v-1.0/ocean-ride-vista-lateral.png"
+                alt="-50%"
+              />
+              <h3>Ocean Ride Model 2</h3>
+              <h6>Side view of Ocean Ride</h6>
+            </div>
+            <div class="ocean-ride-vista-frontal">
+              <img
+                src="imagens-v-1.0/ocean_ride_vista_frontal.png"
+                alt="-50%"
+              />
+
+              <h3>Ocean Ride Model 1</h3>
+              <h6>Perspective view of Ocean Ride</h6>
+            </div>
+          </div>
+          <p class="sobre">
+            Ocean Ride is a microplastic collection system that works
+            differently than others. In this project we have two main products:
+            first use as a dockable object on any boat and in addition be a
+            fixed platform strategically positioned in the areas of sea currents
+            that is where has the largest flow of these materials.
+            <br /><br />
+            The system will use the Van Der Graff generator principle to attract
+            micro plastic through an electrostatic current and store this debris
+            inside a container.
+          </p>
+          <p class="aplicabilidade">
+            FACILITY: First we will use thousands of existing vessels that make
+            trips around the entire maritime territory, docking our collection
+            system to take advantage of the sea routes and use them to our
+            advantage and helping to clean up the ocean. Moreover, on fixed
+            platforms we will take advantage of the sea currents that converge
+            to a strategic place that throws the waste towards the positioning
+            of our platform.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="solucao">
+          <p class="part1">
+            FACILITY: First we will use thousands of existing vessels that make
+            trips around the entire maritime territory, docking our collection
+            system to take advantage of the sea routes and use them to our
+            advantage and helping to clean up the ocean. Moreover, on fixed
+            platforms we will take advantage of the sea currents that converge
+            to a strategic place that throws the waste towards the positioning
+            of our platform.
+          </p>
+        </div>
+      </section>
     </div>
     <hr />
     <footer class="text-center">
@@ -210,11 +343,6 @@
         </div>
       </div>
     </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.3.1.js"></script>
 
     <div class="home_boton">
       <a href="#home" class="scroll">topo</a>
