@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>::Cafeína Team::</title>
+
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.3.1.css" rel="stylesheet" />
     <!-- CSS by Cafeína Team -->
@@ -31,6 +32,15 @@
         font-family: "Acumin Pro Bold";
         src: url("fontes/acumin-pro-bold.otf");
       }
+      .imagem-container {
+       display: flex;
+      }
+
+      .imagem-container img {
+      width: 50%;
+      height: auto;
+      }
+
       .correio {
         background-image: url("imagens-v-1.0/correio.png");
         background-repeat: no-repeat;
@@ -78,6 +88,7 @@
         background-position: center center;
         background-size: cover;
         height: 650px;
+        padding-top: 650px;
       }
       .quadro-branco h1 {
         font-family: "Bebas Neue Bold";
@@ -85,7 +96,7 @@
         text-align: center; /* Centraliza o texto horizontalmente */
         font-size: 50pt;
         color: white;
-        margin-bottom: 50%;
+        margin-top: -30%;
       }
       .ocean-ride {
         background-image: url("imagens-v-1.0/ocean-ride.jpg");
@@ -101,15 +112,15 @@
         margin-top: 35%;
         width: 60%;
         margin-left: 20%;
-        font-size: 15pt;
+        font-size: 20pt;
       }
       .ocean-ride .aplicabilidade {
         font-family: "Acumin Pro Regular";
         text-align: center;
-        margin-top: 70%;
+        margin-top: 50%;
         width: 60%;
         margin-left: 20%;
-        font-size: 15pt;
+        font-size: 20pt;
       }
       .ocean-ride-vista-lateral img {
         margin-top: 10%;
@@ -154,9 +165,8 @@
         width: 60%;
         margin-left: 20%;
         color: white;
-        font-size: 15pt;
+        font-size: 20pt;
         margin-top: -450%; /* Definir a margem superior desejada */
-        font-size: 30px;
       }
       .solucao .part2 {
         font-family: "Acumin Pro Regular";
@@ -166,7 +176,7 @@
         color: white;
         font-size: 15pt;
         margin-top: 75%; /* Definir a margem superior desejada */
-        font-size: 30px;
+        font-size: 20pt;
       }
       .solucao .references {
         font-family: "Acumin Pro Regular";
@@ -209,14 +219,14 @@
       .foguete-nasa p {
         font-family: "Acumin Pro Medium";
         font-weight: bold;
-        margin-top: 35%;
+        margin-top: 40%;
         position: absolute; /* Posição absoluta é importante para posicionar o texto */
         top: 120%; /* Posiciona o topo do texto no meio da div */
         left: 29%; /* Posiciona o lado esquerdo do texto no meio da div */
         transform: translate(-50%, -50%); /* Centraliza o texto na div */
         color: #0d4859; /* Define a cor do texto */
         text-align: justify; /* Centraliza o texto horizontalmente */
-        font-size: 12pt;
+        font-size: 14pt;
         width: 50%;
       }
     </style>
@@ -242,7 +252,7 @@
     <!-- Favicon -->
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand"><h1 class="logo">Cafeína</h1></a>
       <button
         class="navbar-toggler"
@@ -283,7 +293,7 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav>-->
     <div>
       <section>
         <div class="equipe"></div>
@@ -499,8 +509,27 @@
             'magnet' at sea. As a prize, young people will visit NASA's Kennedy
             Space Center in Florida, United States, and will have the
             opportunity to present the project to the American Aerospace Agency.
-            <br />To see the full report, go here.
+            <br />
+            <a
+              href="https://www.correio24horas.com.br/noticia/nid/baianos-criam-filtro-que-pode-retirar-plastico-de-aguas-do-oceano/?utm_source=correio24h_share_whatsapp"
+              >To see the full report, go here.</a
+            >
           </p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h1>PATROCINADORES</h1>
+          <div class="imagem-container">
+            <img src="Logomarcas/patrocinadores/fecomercio.png" alt="Imagem 1">
+            <img src="Logomarcas/patrocinadores/logo-flem.png" alt="Imagem 2">
+            </div>
+            <div class="imagem-container">
+              <img src="Logomarcas/patrocinadores/logo-suzano-horizontal-1536 (1).png" alt="Imagem 2">
+            <img src="Logomarcas/patrocinadores/Logotipo-Universidade-Catolica-Padrao.png" alt="Imagem 2">
+            </div>
+          
+      </div>
         </div>
       </section>
       <div class="section" id="bg_team">
