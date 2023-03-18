@@ -62,17 +62,24 @@
       .equipe {
         background-image: url("imagens-v-1.0/equipe.png");
         background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        height: 700px;
-        margin-top: 7%;
+        background-position: center;
+        background-size: contain;
+        height: 750px;
+        display: flex;
+
+
       }
+      
       .foguete-nasa {
         background-image: url("imagens-v-1.0/foguete-nasa.png");
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: cover;
+        background-size: contain;
         height: 700px;
+        padding-top: 700px;
+        display: flex;
+
+        
       }
 
       .tripulacao {
@@ -202,7 +209,7 @@
         transform: translate(-50%, -50%); /* Centraliza o texto na div */
         color: #cb104e; /* Define a cor do texto */
         text-align: center; /* Centraliza o texto horizontalmente */
-        font-size: 3rem; /* Define o tamanho da fonte do texto */
+        font-size: 3em; /* Define o tamanho da fonte do texto */
       }
       .foguete-nasa h6 {
         font-family: "Acumin Pro Medium";
@@ -296,7 +303,8 @@
     </nav>-->
     <div>
       <section>
-        <div class="equipe"></div>
+        <div class="equipe">     
+        </div>
       </section>
       <section>
         <div class="foguete-nasa">
