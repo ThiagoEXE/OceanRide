@@ -262,3 +262,15 @@ h1.logo {
 	background-size: 300px;
 	padding-top: 100px;
 }
+
+.container_foguete{
+	background-image: url(../imagens-v-1.0/foguete-nasa.png);
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
