@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Theme Made By www.w3schools.com -->
-    <title>Oceanride</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-      @font-face {
-        font-family: "Acumin Pro Medium";
-        src: url("fontes/acumin-pro-medium.ttf");
-      }
-      @font-face {
-        font-family: "Acumin Pro Regular";
-        src: url("fontes/acumin-pro-regular.ttf");
-      }
-      @font-face {
-        font-family: "Bebas Neue Bold";
-        src: url("fontes/bebas-neue-bold.otf");
-      }
-      @font-face {
-        font-family: "Bebas Neue Midle";
-        src: url("fontes/bebas-neue-pro-middle.ttf");
-      }
-      @font-face {
-        font-family: "Acumin Pro Bold";
-        src: url("fontes/acumin-pro-bold.otf");
-      }
-      body {
-        font: 400 15px Lato, sans-serif;
-        line-height: 1.8;
-        color: #0d4859;
-      }
-      h2 {
-        font-size: 24px;
-        text-transform: uppercase;
-        color: #303030;
-        font-weight: 600;
-        margin-bottom: 30px;
-      }
-      h4 {
-        font-size: 19px;
-        line-height: 1.375em;
-        color: #303030;
-        font-weight: 400;
-        margin-bottom: 30px;
-      }
-      .jumbotron {
+
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Oceanride</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    @font-face {
+      font-family: "Acumin Pro Medium";
+      src: url("fontes/acumin-pro-medium.ttf");
+    }
+
+    @font-face {
+      font-family: "Acumin Pro Regular";
+      src: url("fontes/acumin-pro-regular.ttf");
+    }
+
+    @font-face {
+      font-family: "Bebas Neue Bold";
+      src: url("fontes/bebas-neue-bold.otf");
+    }
+
+    @font-face {
+      font-family: "Bebas Neue Midle";
+      src: url("fontes/bebas-neue-pro-middle.ttf");
+    }
+
+    @font-face {
+      font-family: "Acumin Pro Bold";
+      src: url("fontes/acumin-pro-bold.otf");
+    }
+
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #0d4859;
+    }
+
+    h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+   
+
+    .jumbotron {
         background-image: url("./imagens/Arte\ 1.jpg");
         color: #cb104e;
         padding: 80px 50px;
@@ -86,331 +92,397 @@
         color: white;
       }
 
-      .container-fluid {
-        padding: 60px 50px;
+    .container-fluid {
+      padding: 60px 50px;
+    }
+
+    .bg-grey {
+      background-color: #f6f6f6;
+    }
+
+    .logo-small {
+      color: #73c3e0;
+      font-size: 50px;
+    }
+
+    .logo {
+      color: #73c3e0;
+      font-size: 200px;
+    }
+
+    .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+    }
+
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+
+    .carousel-control.right,
+    .carousel-control.left {
+      background-image: none;
+      color: #73c3e0;
+    }
+
+    .carousel-indicators li {
+      border-color: #73c3e0;
+    }
+
+    .carousel-indicators li.active {
+      background-color: #73c3e0;
+    }
+
+    .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+    }
+
+    .item span {
+      font-style: normal;
+    }
+
+    .panel {
+      border: 1px solid #73c3e0;
+      border-radius: 0 !important;
+      transition: box-shadow 0.5s;
+    }
+
+    .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .panel-footer .btn:hover {
+      border: 1px solid #73c3e0;
+      background-color: #fff !important;
+      color: #73c3e0;
+    }
+
+    .panel-heading {
+      color: #fff !important;
+      background-color: #73c3e0 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .panel-footer {
+      background-color: white !important;
+    }
+
+    .panel-footer h3 {
+      font-size: 32px;
+    }
+
+    .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #73c3e0;
+      color: #fff;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+      background-color: #73c3e0;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+      color: #fff !important;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+      color: #73c3e0 !important;
+      background-color: #fff !important;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+    }
+
+    footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #73c3e0;
+    }
+
+    .slideanim {
+      visibility: hidden;
+    }
+
+    .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+    }
+
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
       }
-      .bg-grey {
-        background-color: #f6f6f6;
+
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
       }
-      .logo-small {
-        color: #73c3e0;
-        font-size: 50px;
+    }
+
+    @-webkit-keyframes slide {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
       }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+
+      .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
       .logo {
-        color: #73c3e0;
-        font-size: 200px;
+        font-size: 150px;
       }
-      .thumbnail {
-        padding: 0 0 15px 0;
-        border: none;
-        border-radius: 0;
-      }
-      .thumbnail img {
-        width: 100%;
-        height: 100%;
-        margin-bottom: 10px;
-      }
-      .carousel-control.right,
-      .carousel-control.left {
-        background-image: none;
-        color: #73c3e0;
-      }
-      .carousel-indicators li {
-        border-color: #73c3e0;
-      }
-      .carousel-indicators li.active {
-        background-color: #73c3e0;
-      }
-      .item h4 {
-        font-size: 19px;
-        line-height: 1.375em;
-        font-weight: 400;
-        font-style: italic;
-        margin: 70px 0;
-      }
-      .item span {
-        font-style: normal;
-      }
-      .panel {
-        border: 1px solid #73c3e0;
-        border-radius: 0 !important;
-        transition: box-shadow 0.5s;
-      }
-      .panel:hover {
-        box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.2);
-      }
-      .panel-footer .btn:hover {
-        border: 1px solid #73c3e0;
-        background-color: #fff !important;
-        color: #73c3e0;
-      }
-      .panel-heading {
-        color: #fff !important;
-        background-color: #73c3e0 !important;
-        padding: 25px;
-        border-bottom: 1px solid transparent;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-      }
-      .panel-footer {
-        background-color: white !important;
-      }
-      .panel-footer h3 {
-        font-size: 32px;
-      }
-      .panel-footer h4 {
-        color: #aaa;
-        font-size: 14px;
-      }
-      .panel-footer .btn {
-        margin: 15px 0;
-        background-color: #73c3e0;
-        color: #fff;
-      }
-      .navbar {
-        margin-bottom: 0;
-        background-color: #73c3e0;
-        z-index: 9999;
-        border: 0;
-        font-size: 12px !important;
-        line-height: 1.42857143 !important;
-        letter-spacing: 4px;
-        border-radius: 0;
-        font-family: Montserrat, sans-serif;
-      }
-      .navbar li a,
-      .navbar .navbar-brand {
-        color: #fff !important;
-      }
-      .navbar-nav li a:hover,
-      .navbar-nav li.active a {
-        color: #73c3e0 !important;
-        background-color: #fff !important;
-      }
-      .navbar-default .navbar-toggle {
-        border-color: transparent;
-        color: #fff !important;
-      }
-      footer .glyphicon {
-        font-size: 20px;
-        margin-bottom: 20px;
-        color: #73c3e0;
-      }
-      .slideanim {
-        visibility: hidden;
-      }
-      .slide {
-        animation-name: slide;
-        -webkit-animation-name: slide;
-        animation-duration: 1s;
-        -webkit-animation-duration: 1s;
-        visibility: visible;
-      }
-      @keyframes slide {
-        0% {
-          opacity: 0;
-          transform: translateY(70%);
-        }
-        100% {
-          opacity: 1;
-          transform: translateY(0%);
-        }
-      }
-      @-webkit-keyframes slide {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(70%);
-        }
-        100% {
-          opacity: 1;
-          -webkit-transform: translateY(0%);
-        }
-      }
-      @media screen and (max-width: 768px) {
-        .col-sm-4 {
-          text-align: center;
-          margin: 25px 0;
-        }
-        .btn-lg {
-          width: 100%;
-          margin-bottom: 35px;
-        }
-      }
-      @media screen and (max-width: 480px) {
-        .logo {
-          font-size: 150px;
-        }
-      }
+    }
 
-      #impact img {
-        width: 60%;
-        height: 50%;
-        margin-left: 30%;
-      }
-      #impact h1 {
-        font-family: "Bebas Neue Bold";
-        color: #cb104e;
-        font-size: 50px;
-      }
-      #impact h6 {
-        font-family: "Acumin Pro Medium";
-        color: #2796b4;
-        font-size: 20px;
-      }
-      #impact p {
-        font-family: "Acumin Pro Bold";
-        color: #0d4859;
-        text-align: justify;
-        font-size: 18px;
-      }
+    #impact img {
+      width: 60%;
+      height: 50%;
+      margin-left: 30%;
+    }
 
-      #team img {
-        width: 100%;
-        height: 50%;
-      }
-      #team h1 {
-        text-align: center;
-        font-family: "Bebas Neue Bold";
-      }
-      #team above {
-        color: #2796b4;
-      }
-      #team p {
-        text-align: center;
-        font-family: "Acumin Pro Medium";
-      }
+    #impact h1 {
+      font-family: "Bebas Neue Bold";
+      color: #cb104e;
+      font-size: 50px;
+    }
 
-      #ocean-ride h1 {
-        font-family: "Bebas Neue Bold";
-        text-align: center;
-      }
-      #ocean-ride img {
-        height: 100%;
-        width: 100%;
-      }
-      #about-ocean-ride h1 {
-        font-family: "Bebas Neue Bold";
-        text-align: center;
-      }
-      #about-ocean-ride p {
-        font-family: "Acumin Pro Regular";
-        text-align: justify;
-        font-size: 18px;
-      }
+    #impact h6 {
+      font-family: "Acumin Pro Medium";
+      color: #2796b4;
+      font-size: 20px;
+    }
 
-      #rotas-maritimas img {
-        height: 100%;
-        width: 100%;
-      }
-      #rotas-maritimas p {
-        font-family: "Acumin Pro Regular";
-        text-align: justify;
-        font-size: 18px;
-      }
-      #threerdsolution h1 {
-        font-family: "Bebas Neue Bold";
-        text-align: center;
-      }
-      #threerdsolution p {
-        font-family: "Acumin Pro Regular";
-        text-align: justify;
-        font-size: 18px;
-      }
-      #threerdsolution img {
-        height: 70%;
-        width: 70%;
-        margin-left: 15%;
-      }
-      .youtube {
-        background-image: url("./imagens/youtube.svg");
-        background-repeat: no-repeat;
-        display: block;
-        width: 60px;
-        height: 60px;
-        text-indent: -5000px;
-      }
-      .instagram {
-        background-image: url("./imagens/instagram.svg");
-        background-repeat: no-repeat;
-        display: block;
-        width: 60px;
-        height: 60px;
-        text-indent: -5000px;
-      }
-      #about img {
-        width: 100%;
-        height: 100%;
-      }
-      #about h6 {
-        font-family: "Acumin Pro Medium";
-        color: #2796b4;
-        font-size: 20px;
-      }
-      #about p {
-        text-align: justify;
-        font-family: "Acumin Pro Bold";
-        font-size: 18px;
-      }
-      #contact img {
-        height: 50%;
-        width: 50%;
-        margin-left: 40%;
-      }
-      h1.logo {
-        background-image: url("./imagens/logo_cafeina.svg");
-        background-repeat: no-repeat;
-        display: block;
-        height: 70px;
-        width: 50px;
-        text-indent: -5000px;
-        margin: 0;
-        padding: 0;
-        margin-top: -10px;
-      }
-    </style>
-  </head>
-  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#myNavbar"
-          >
-            <span class="imyPagecon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#myPage"
-            ><h1 class="logo">Cafeína</h1></a
-          >
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#impact">IMPACT</a></li>
-            <li><a href="#team">TEAM</a></li>
-            <li><a href="#ocean-ride">OCEAN RIDE</a></li>
-            <li><a href="#about">+ ABOUT US</a></li>
-            <!--<li><a href="#services">SERVICOS</a></li>
+    #impact p {
+      font-family: "Acumin Pro Bold";
+      color: #0d4859;
+      text-align: justify;
+      font-size: 18px;
+    }
+
+    #team img {
+      width: 100%;
+      height: 50%;
+    }
+
+    #team h1 {
+      text-align: center;
+      font-family: "Bebas Neue Bold";
+    }
+
+    #team above {
+      color: #2796b4;
+    }
+
+    #team p {
+      text-align: center;
+      font-family: "Acumin Pro Medium";
+    }
+
+    #ocean-ride h1 {
+      font-family: "Bebas Neue Bold";
+      text-align: center;
+    }
+
+    #ocean-ride img {
+      height: 100%;
+      width: 100%;
+    }
+
+    #about-ocean-ride h1 {
+      font-family: "Bebas Neue Bold";
+      text-align: center;
+    }
+
+    #about-ocean-ride p {
+      font-family: "Acumin Pro Regular";
+      text-align: justify;
+      font-size: 18px;
+    }
+
+    #rotas-maritimas img {
+      height: 100%;
+      width: 100%;
+    }
+
+    #rotas-maritimas p {
+      font-family: "Acumin Pro Regular";
+      text-align: justify;
+      font-size: 18px;
+    }
+
+    #threerdsolution h1 {
+      font-family: "Bebas Neue Bold";
+      text-align: center;
+    }
+
+    #threerdsolution p {
+      font-family: "Acumin Pro Regular";
+      text-align: justify;
+      font-size: 18px;
+    }
+
+    #threerdsolution img {
+      height: 70%;
+      width: 70%;
+      margin-left: 15%;
+    }
+
+    .youtube {
+      background-image: url("./imagens/youtube.svg");
+      background-repeat: no-repeat;
+      display: block;
+      width: 60px;
+      height: 60px;
+      text-indent: -5000px;
+    }
+
+    .instagram {
+      background-image: url("./imagens/instagram.svg");
+      background-repeat: no-repeat;
+      display: block;
+      width: 60px;
+      height: 60px;
+      text-indent: -5000px;
+    }
+
+    #about img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #about h6 {
+      font-family: "Acumin Pro Medium";
+      color: #2796b4;
+      font-size: 20px;
+    }
+    #about h2 {
+      font-family: "Bebas Neue Bold";
+      color: #cb104e;
+      font-size: 36px;
+    }
+
+    #about p {
+      text-align: justify;
+      font-family: "Acumin Pro Bold";
+      font-size: 18px;
+    }
+
+    #contact img {
+      height: 50%;
+      width: 50%;
+      margin-left: 40%;
+    }
+
+    h1.logo {
+      background-image: url("./imagens/logo_cafeina.svg");
+      background-repeat: no-repeat;
+      display: block;
+      height: 70px;
+      width: 50px;
+      text-indent: -5000px;
+      margin: 0;
+      padding: 0;
+      margin-top: -10px;
+    }
+
+    .img-fluid {
+      height: 100%;
+    }
+
+    .col-md-2 {
+      margin-right: 30px;
+      /* Adiciona margem entre as colunas */
+    }
+
+    .last-col {
+      margin-right: 0;
+      /* Remove margem da última coluna */
+    }
+  </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="imyPagecon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage">
+          <h1 class="logo">Cafeína</h1>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#impact">IMPACT</a></li>
+          <li><a href="#team">TEAM</a></li>
+          <li><a href="#ocean-ride">OCEAN RIDE</a></li>
+          <li><a href="#about">+ ABOUT US</a></li>
+          <!--<li><a href="#services">SERVICOS</a></li>
             <li><a href="#portfolio">PORTFOLIO</a></li>
             <li><a href="#pricing">PREÇOS</a></li>-->
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </div>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="jumbotron text-center">
-      <h1>CAFEINA TEAM</h1>
-      <p>
-        Winner of the "Best Use of Hardware" category at the Space Apps
-        Challenge Salvador
-      </p>
-   <!--<form>
+  <div class="jumbotron text-center">
+    <h1>CAFEINA TEAM</h1>
+    <p>
+      Champions of the biggest hackathon in the world!
+    </p>
+    <!--<form>
         <div class="input-group">
       <input type="email" class="form-control" size="50" placeholder="Email Address" required>
       <div class="input-group-btn">
@@ -419,170 +491,224 @@
     </div>
   </form>
   -->
-    </div>
-    <!--Impact Section-->
-    <div id="impact" class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6">
-          <h1>FROM SALVADOR, BAHIA, BRAZIL <br />TO THE WORLD</h1>
-          <h6>Impacting the region and transforming lives</h6>
-          <p>
-            The team made a significant impact on the number of participants in
-            2021 was the city among the 45 with the most participants, ranking
-            6th among 320 cities in the world.
-            <br /><br />
-            Our big impact today is EDUCATION. We make ourselves available to
-            talk to other young people and teenagers who already have an
-            interest in entrepreneurship, innovation, and having a positive
-            impact on the world. For this reason, we actively participate in
-            Hack at Schools, an initiative that takes the hackathons methodology
-            to children and teenagers in public schools, impacting over 600
-            teenagers in a total of 4 public schools.
-          </p>
-        </div>
+  </div>
 
-        <div class="col-sm-6">
-          <img src="./imagens/bg_foguete.jpg" alt="Jovens Baianos na NASA" />
-        </div>
-      </div>
-    </div>
-    <hr />
-    <!--Team of PartiuNasa-->
-    <div id="team" class="container-fluid">
-      <h1>TO THE SKY AND <above>ABOVE</above></h1>
-      <p>Our team is composed by</p>
-      <img src="imagens/tripulacao.jpg" alt="Team Cafeinne" />
-    </div>
-    <hr />
-    <!--Ocean Ride-->
-    <div id="ocean-ride" class="container-fluid">
-      <h1>OUR TRANSFORMING CREATION: OCEAN RIDE</h1>
-      <br />
+ 
+  <!-- Container (About Section) -->
+  <div id="about" class="container-fluid">
+    <h2>About Team Cafeina</h2>
+    <br />
+    <h4>
+      From the victory at the NASA Space Apps Challenge Salvador, in 2019 we
+      became disseminators of the culture of impact entrepreneurship...
+    </h4>
+    <br />
+    <div class="row">
       <div class="col-sm-6">
-        <img src="imagens/ocean_ride_vista_frontal.png" alt="Ocean ride" />
-        <h3>Ocean Ride Model 1</h3>
-        <h6>Perspective view of Ocean Ride</h6>
-      </div>
-      <div class="col-sm-6">
-        <img src="imagens/ocean-ride-vista-lateral.png" alt="Microplastics" />
-        <h3>Ocean Ride Model 2</h3>
-        <h6>Side view of Ocean Ride</h6>
-      </div>
-    </div>
-
-    <!--About Ocean Ride-->
-    <div id="about-ocean-ride" class="container-fluid">
-      <h1>1ST: WHAT IS THE <b>OCEAN RIDE?</b></h1>
-      <p>
-        Ocean Ride is a microplastic collection system that works differently
-        than others. In this project we have two main products: first use as a
-        dockable object on any boat and in addition be a fixed platform
-        strategically positioned in the areas of sea currents that is where has
-        the largest flow of these materials. The system will use the Van Der
-        Graff generator principle to attract micro plastic through an
-        electrostatic current and store this debris inside a container.
-      </p>
-      <br />
-      <h1>2ND: <b>APPLICABILITY</b> AND FEASIBILITY:</h1>
-      <p>
-        FACILITY: First we will use thousands of existing vessels that make
-        trips around the entire maritime territory, docking our collection
-        system to take advantage of the sea routes and use them to our advantage
-        and helping to clean up the ocean. Moreover, on fixed platforms we will
-        take advantage of the sea currents that converge to a strategic place
-        that throws the waste towards the positioning of our platform.
-      </p>
-    </div>
-
-    <!--Maritims Routes-->
-    <div id="rotas-maritimas" class="container-fluid">
-      <div class="col-sm-6">
-        <img src="imagens/rotas_maritimas.png" alt="Maritims Routes" />
+        <img src="./imagens/correio.jpg" alt="Jovens Baianos na NASA" />
+        <br />
       </div>
       <div class="col-sm-6">
         <p>
-          ECONOMIC FEASIBILITY: The economic viability will make companies
-          embrace our solution, while enabling sustainability and cleanliness of
-          the ocean, will provide additional profit for ship companies. In
-          addition, NASA will have a low cost to implement. <br />
-          COMPANY IMAGE: The company will be associated with a sustainable
-          image, and consequently will generate a competitive differential that
-          will help in the formation of new business, besides being able to
-          achieve a stronger partnership with the clients interested in this
-          image.
+          Young people won around the world with a project to care for the
+          oceans; they go to the USA to present the project A businessman who
+          got on the bus, a country boy who comes to the capital to study.
+          Another who dreamed of getting to know Disney and as a child wanted
+          to be an astronaut. Someone who needs to work all day and study at
+          night. The future administrator who dreams of doing something big
+          and helping others. Looking at the distance, although quite
+          different, the profiles can fit the stories of many students. The
+          feat of these five Bahians, however, is unique: the team won the
+          largest Hackathon in the world, promoted by Nasa - the Nasa Space
+          Apps Challenge 2019 - and now prepares the bags to visit the
+          headquarters of the entity in the United States (USA). With the name
+          of Ocean Ride, the boys' project created a device to collect plastic
+          microparticles from the waters, helping to clean them. To perform
+          the 'service', the device would be attached to large vessels such as
+          cruise ships, cargo ships or oil platforms and would act as a
+          'magnet' at sea. As a prize, young people will visit NASA's Kennedy
+          Space Center in Florida, United States, and will have the
+          opportunity to present the project to the American Aerospace Agency.
+          <a
+            href="https://www.correio24horas.com.br/noticia/nid/baianos-criam-filtro-que-pode-retirar-plastico-de-aguas-do-oceano/?utm_source=correio24h_share_whatsapp">
+            To see the full report, go here.</a>
         </p>
       </div>
     </div>
-    <div id="threerdsolution" class="container-fluid">
-      <h1>3rd Solution</h1>
-      <p>
-        Van Der Graff's generator principle is the heart of the project, and it
-        is responsible for all the attraction of microplastics across a specific
-        field to attract only that plastic. The device works similar to a
-        magnet. In addition, there is a conveyor belt that, when it comes into
-        contact with the Van Der Graff generator orb, will be electrified and
-        attract our debris, but in order not only to guarantee the electrostatic
-        charge on the conveyor belts, a blade mechanism with a maximum hole size
-        of 5mm. will be inserted into the treadmill.
-        <br /><br />
-        Right after the process of attracting the microplastic, we will store
-        this waste, compacting it to optimize as much space as possible
-      </p>
-      <img
-        src="imagens/ocean_ride_vistas_tecnica_Prancheta 1.png"
-        alt="Ocean Device"
-      />
-      <img
-        src="imagens/ocean_ride_vistas_tecnica-02.png"
-        alt="Ocean Device sustainable"
-      />
+  </div>
+  <!--Team of PartiuNasa
+   <div id="team" class="container-fluid">
+    <h1>TO THE SKY AND <above>ABOVE</above>
+    </h1>
+    
+    <img src="imagens/tripulacao.jpg" alt="Team Cafeinne" />
+  </div>-->
+
+  <div class="w3-container w3-padding-64 w3-center" id="team">
+    <h1>OUR TEAM</h1>
+    <div class="w3-row"><br>
+
+      <div class="w3-quarter">
+        <img src="imagens/antonio.jpg" alt="Antônio Rocha" style="width:50%;" class="w3-rectangle w3-hover-opacity">
+        <h3>Antônio Rocha</h3>
+        <p>What is Lorem Ipsum?
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged.</p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="imagens/genilson.jpg" alt="Genilson Brito" style="width:50%" class="w3-rectangle w3-hover-opacity">
+        <h3>Genilson Brito</h3>
+        <p>What is Lorem Ipsum?
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged.</p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="imagens/ramon.jpg" alt="Ramon Almeida" style="width:50%" class="w3-rectangle w3-hover-opacity">
+        <h3>Ramon Almeida</h3>
+        <p>What is Lorem Ipsum?
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged.</p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="imagens/pedro.jpg" alt="Pedro Dantas" style="width:50%" class="w3-rectangle w3-hover-opacity">
+        <h3>Pedro Dantas</h3>
+        <p>What is Lorem Ipsum?
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged.</p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="imagens/thiago.jpg" alt="Thiago Barbosa" style="width:50%" class="w3-rectangle w3-hover-opacity">
+        <h3>Thiago Barbosa</h3>
+        <p>What is Lorem Ipsum?
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged.</p>
+      </div>
+
     </div>
-    <!-- Container (About Section) -->
-    <div id="about" class="container-fluid">
-      <h2>About Team Cafeina</h2>
-      <br />
-      <h4>
-        From the victory at the NASA Space Apps Challenge Salvador, in 2019 we
-        became disseminators of the culture of impact entrepreneurship...
-      </h4>
-      <br />
-      <div class="row">
-        <div class="col-sm-6">
-          <img src="./imagens/correio.jpg" alt="Jovens Baianos na NASA" />
-          <br />
-        </div>
-        <div class="col-sm-6">
-          <p>
-            Young people won around the world with a project to care for the
-            oceans; they go to the USA to present the project A businessman who
-            got on the bus, a country boy who comes to the capital to study.
-            Another who dreamed of getting to know Disney and as a child wanted
-            to be an astronaut. Someone who needs to work all day and study at
-            night. The future administrator who dreams of doing something big
-            and helping others. Looking at the distance, although quite
-            different, the profiles can fit the stories of many students. The
-            feat of these five Bahians, however, is unique: the team won the
-            largest Hackathon in the world, promoted by Nasa - the Nasa Space
-            Apps Challenge 2019 - and now prepares the bags to visit the
-            headquarters of the entity in the United States (USA). With the name
-            of Ocean Ride, the boys' project created a device to collect plastic
-            microparticles from the waters, helping to clean them. To perform
-            the 'service', the device would be attached to large vessels such as
-            cruise ships, cargo ships or oil platforms and would act as a
-            'magnet' at sea. As a prize, young people will visit NASA's Kennedy
-            Space Center in Florida, United States, and will have the
-            opportunity to present the project to the American Aerospace Agency.
-            <a
-              href="https://www.correio24horas.com.br/noticia/nid/baianos-criam-filtro-que-pode-retirar-plastico-de-aguas-do-oceano/?utm_source=correio24h_share_whatsapp"
-            >
-              To see the full report, go here.</a
-            >
-          </p>
-        </div>
+  </div>
+  <!--Ocean Ride-->
+  <div id="ocean-ride" class="container-fluid">
+    <h1>OUR TRANSFORMING CREATION: OCEAN RIDE</h1>
+    <br />
+    <div class="col-sm-6">
+      <img src="imagens/ocean_ride_vista_frontal.png" alt="Ocean ride" />
+      <h3>Ocean Ride Model 1</h3>
+      <h6>Perspective view of Ocean Ride</h6>
+    </div>
+    <div class="col-sm-6">
+      <img src="imagens/ocean-ride-vista-lateral.png" alt="Microplastics" />
+      <h3>Ocean Ride Model 2</h3>
+      <h6>Side view of Ocean Ride</h6>
+    </div>
+  </div>
+
+  <!--About Ocean Ride-->
+  <div id="about-ocean-ride" class="container-fluid">
+    <h1>1ST: WHAT IS THE <b>OCEAN RIDE?</b></h1>
+    <p>
+      Ocean Ride is a microplastic collection system that works differently
+      than others. In this project we have two main products: first use as a
+      dockable object on any boat and in addition be a fixed platform
+      strategically positioned in the areas of sea currents that is where has
+      the largest flow of these materials. The system will use the Van Der
+      Graff generator principle to attract micro plastic through an
+      electrostatic current and store this debris inside a container.
+    </p>
+    <br />
+    <h1>2ND: <b>APPLICABILITY</b> AND FEASIBILITY:</h1>
+    <p>
+      FACILITY: First we will use thousands of existing vessels that make
+      trips around the entire maritime territory, docking our collection
+      system to take advantage of the sea routes and use them to our advantage
+      and helping to clean up the ocean. Moreover, on fixed platforms we will
+      take advantage of the sea currents that converge to a strategic place
+      that throws the waste towards the positioning of our platform.
+    </p>
+  </div>
+
+  <!--Maritims Routes-->
+  <div id="rotas-maritimas" class="container-fluid">
+    <div class="col-sm-6">
+      <img src="imagens/rotas_maritimas.png" alt="Maritims Routes" />
+    </div>
+    <div class="col-sm-6">
+      <p>
+        ECONOMIC FEASIBILITY: The economic viability will make companies
+        embrace our solution, while enabling sustainability and cleanliness of
+        the ocean, will provide additional profit for ship companies. In
+        addition, NASA will have a low cost to implement. <br />
+        COMPANY IMAGE: The company will be associated with a sustainable
+        image, and consequently will generate a competitive differential that
+        will help in the formation of new business, besides being able to
+        achieve a stronger partnership with the clients interested in this
+        image.
+      </p>
+    </div>
+  </div>
+  <div id="threerdsolution" class="container-fluid">
+    <h1>3rd Solution</h1>
+    <p>
+      Van Der Graff's generator principle is the heart of the project, and it
+      is responsible for all the attraction of microplastics across a specific
+      field to attract only that plastic. The device works similar to a
+      magnet. In addition, there is a conveyor belt that, when it comes into
+      contact with the Van Der Graff generator orb, will be electrified and
+      attract our debris, but in order not only to guarantee the electrostatic
+      charge on the conveyor belts, a blade mechanism with a maximum hole size
+      of 5mm. will be inserted into the treadmill.
+      <br /><br />
+      Right after the process of attracting the microplastic, we will store
+      this waste, compacting it to optimize as much space as possible
+    </p>
+    <img src="imagens/ocean_ride_vistas_tecnica_Prancheta 1.png" alt="Ocean Device" />
+    <img src="imagens/ocean_ride_vistas_tecnica-02.png" alt="Ocean Device sustainable" />
+  </div>
+  <!--Impact Section-->
+  <div id="impact" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1>FROM SALVADOR, BAHIA, BRAZIL <br />TO THE WORLD</h1>
+        <h6>Impacting the region and transforming lives</h6>
+        <p>
+          The team made a significant impact on the number of participants in
+          2021 was the city among the 45 with the most participants, ranking
+          6th among 320 cities in the world.
+          <br /><br />
+          Our big impact today is EDUCATION. We make ourselves available to
+          talk to other young people and teenagers who already have an
+          interest in entrepreneurship, innovation, and having a positive
+          impact on the world. For this reason, we actively participate in
+          Hack at Schools, an initiative that takes the hackathons methodology
+          to children and teenagers in public schools, impacting over 600
+          teenagers in a total of 4 public schools.
+        </p>
+      </div>
+
+      <div class="col-sm-6">
+        <img src="./imagens/bg_foguete.jpg" alt="Jovens Baianos na NASA" />
       </div>
     </div>
+  </div>
+  <hr />
 
-    <!--<div class="container-fluid bg-grey">
+
+
+
+  <!--'<div class="container-fluid bg-grey">
       <div class="row">
         <div class="col-sm-4">
           <span class="glyphicon glyphicon-globe logo slideanim"></span>
@@ -753,8 +879,8 @@
       </div>
     </div>-->
 
-    <!-- Container (Pricing Section) -->
-    <!--div id="pricing" class="container-fluid">
+  <!-- Container (Pricing Section) -->
+  <!--div id="pricing" class="container-fluid">
   <div class="text-center">
     <h2>Pricing</h2>
     <h4>Choose a payment plan that works for you</h4>
@@ -821,42 +947,32 @@
 </div>
 
 <!-- Container (Contact Section) -->
-    <div id="contact" class="container-fluid bg-grey">
-      <h2 class="text-center">CONTACT</h2>
-      <div class="row">
-        <div class="col-sm-4">
-          <p>Contact us and we'll get back to you within 24 hours.</p>
-          <p>
-            <span class="glyphicon glyphicon-map-marker"></span> Bahia, Brazil
-          </p>
-          <p><span class="glyphicon glyphicon-phone"></span> +55 71992530964</p>
-          <p>
-            <span class="glyphicon glyphicon-envelope"></span>
-            contato.equipecafeina@gmail.com
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <p align="center">
-            <a
-              href="https://www.youtube.com/channel/UCk_6PDwjNjabjhXO3Cin3dw"
-              target="_blank"
-              class="youtube"
-              >Youtube</a
-            >
-          </p>
-          <p align="center">
-            <a
-              href="https://www.instagram.com/equipecafeina/"
-              target="_blank"
-              class="instagram"
-              >Instagram</a
-            >
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <img src="imagens/logo_cafeina_cinza.svg" alt="" />
-        </div>
-        <!--<div class="col-sm-7 slideanim">
+  <div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p>
+          <span class="glyphicon glyphicon-map-marker"></span> Bahia, Brazil
+        </p>
+        <p><span class="glyphicon glyphicon-phone"></span> +55 71992530964</p>
+        <p>
+          <span class="glyphicon glyphicon-envelope"></span>
+          contato.equipecafeina@gmail.com
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <p align="center">
+          <a href="https://www.youtube.com/channel/UCk_6PDwjNjabjhXO3Cin3dw" target="_blank" class="youtube">Youtube</a>
+        </p>
+        <p align="center">
+          <a href="https://www.instagram.com/equipecafeina/" target="_blank" class="instagram">Instagram</a>
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="imagens/logo_cafeina_cinza.svg" alt="" />
+      </div>
+      <!--<div class="col-sm-7 slideanim">
           <div class="row">
             <div class="col-sm-6 form-group">
               <input
@@ -895,17 +1011,17 @@
             </div>
           </div>
         </div>-->
-      </div>
     </div>
+  </div>
 
-    <!-- Image of location/map
+  <!-- Image of location/map
     <img
       src="/w3images/map.jpg"
       class="w3-image w3-greyscale-min"
       style="width: 100%"
     /> -->
 
-    <!--regua de marca
+  <!--regua de marca
 
     <div class="container-fluid">
       <h1>Hello World!</h1>
@@ -932,52 +1048,54 @@
       <div class="col-md-6"></div>
     </div>-->
 
-    <footer class="container-fluid text-center">
-      <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-        <p>Voltar ao Topo</p>
-      </a>
-      
-    </footer>
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+      <p>Voltar ao Topo</p>
+    </a>
 
-    <script>
-      $(document).ready(function () {
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+  </footer>
 
-            // Store hash
-            var hash = this.hash;
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            $("html, body").animate(
-              {
-                scrollTop: $(hash).offset().top,
-              },
-              900,
-              function () {
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              }
-            );
-          } // End if
-        });
+          // Store hash
+          var hash = this.hash;
 
-        $(window).scroll(function () {
-          $(".slideanim").each(function () {
-            var pos = $(this).offset().top;
-
-            var winTop = $(window).scrollTop();
-            if (pos < winTop + 600) {
-              $(this).addClass("slide");
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            900,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
             }
-          });
+          );
+        } // End if
+      });
+
+      $(window).scroll(function () {
+        $(".slideanim").each(function () {
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
         });
       });
-    </script>
-  </body>
+    });
+  </script>
+
+</body>
+
 </html>
