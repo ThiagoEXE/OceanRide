@@ -11,9 +11,9 @@
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
-  
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -65,32 +65,35 @@
       font-weight: 400;
       margin-bottom: 30px;
     }
-   
+
 
     .jumbotron {
-        background-image: url("./imagens/Arte\ 1.jpg");
-        color: #cb104e;
-        padding: 80px 50px;
-        font-family: Montserrat, sans-serif;
-        min-height: 400px;
-        width: 100%;
+      background-image: url("./imagens/Arte\ 1.jpg");
+      color: #cb104e;
+      padding: 80px 50px;
+      font-family: Montserrat, sans-serif;
+      min-height: 400px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    @media (min-width: 992px) {
+      .jumbotron {
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
       }
-      @media (min-width: 992px) {
-        .jumbotron {
-          background-size: cover;
-        }
-      }
-      .jumbotron h1 {
-        font-family: "Bebas Neue Bold";
-      }
-      .jumbotron p {
-        font-family: "Acumin Pro Medium";
-        margin-top: 30%;
-        color: white;
-      }
+    }
+
+    .jumbotron h1 {
+      font-family: "Bebas Neue Bold";
+    }
+
+    .jumbotron p {
+      font-family: "Acumin Pro Medium";
+      margin-top: 30%;
+      color: white;
+    }
 
     .container-fluid {
       padding: 60px 50px;
@@ -403,6 +406,7 @@
       color: #2796b4;
       font-size: 20px;
     }
+
     #about h2 {
       font-family: "Bebas Neue Bold";
       color: #cb104e;
@@ -445,6 +449,27 @@
     .last-col {
       margin-right: 0;
       /* Remove margem da última coluna */
+    }
+
+    .video-container {
+      position: relative;
+      max-width: 90%;
+      height: 0;
+      padding-bottom: 56.25%;
+      overflow: hidden;
+    }
+     h1{
+      font-family: "Bebas Neue Bold";
+    color: #0d4859;
+    text-align: center;
+  }
+    #video {
+      padding-top: 10%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
@@ -493,7 +518,7 @@
   -->
   </div>
 
- 
+
   <!-- Container (About Section) -->
   <div id="about" class="container-fluid">
     <h2>About Team Cafeina</h2>
@@ -536,6 +561,7 @@
       </div>
     </div>
   </div>
+
   <!--Team of PartiuNasa
    <div id="team" class="container-fluid">
     <h1>TO THE SKY AND <above>ABOVE</above>
@@ -548,16 +574,16 @@
     <h1>OUR TEAM</h1>
     <div class="w3-row"><br>
 
+
       <div class="w3-quarter">
-        <img src="imagens/antonio.jpg" alt="Antônio Rocha" style="width:50%;" class="w3-rectangle w3-hover-opacity">
-        <h3>Antônio Rocha</h3>
+        <img src="imagens/thiago.jpg" alt="Thiago Barbosa" style="width:50%" class="w3-rectangle w3-hover-opacity">
+        <h3>Thiago Barbosa</h3>
         <p>What is Lorem Ipsum?
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
           standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
           make a type specimen book. It has survived not only five centuries, but also the leap into electronic
           typesetting, remaining essentially unchanged.</p>
       </div>
-
       <div class="w3-quarter">
         <img src="imagens/genilson.jpg" alt="Genilson Brito" style="width:50%" class="w3-rectangle w3-hover-opacity">
         <h3>Genilson Brito</h3>
@@ -587,10 +613,9 @@
           make a type specimen book. It has survived not only five centuries, but also the leap into electronic
           typesetting, remaining essentially unchanged.</p>
       </div>
-
       <div class="w3-quarter">
-        <img src="imagens/thiago.jpg" alt="Thiago Barbosa" style="width:50%" class="w3-rectangle w3-hover-opacity">
-        <h3>Thiago Barbosa</h3>
+        <img src="imagens/antonio.jpg" alt="Antônio Rocha" style="width:50%;" class="w3-rectangle w3-hover-opacity">
+        <h3>Antônio Rocha</h3>
         <p>What is Lorem Ipsum?
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
           standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
@@ -600,9 +625,20 @@
 
     </div>
   </div>
+  <!--Video pitch-->
+
+  <h1>OUR VIDEO PITCH
+  </h1>
+  <div class="container-fluid video-container">
+
+    <iframe id="video" width="1131" height="636" src="https://www.youtube.com/embed/ybJtCZdCWM4"
+      title="Ocean Ride by Cafeína Team &#39;" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen="false"></iframe>
+  </div>
   <!--Ocean Ride-->
   <div id="ocean-ride" class="container-fluid">
-    <h1>OUR TRANSFORMING CREATION: OCEAN RIDE</h1>
+    <h1>OCEAN RIDE</h1>
     <br />
     <div class="col-sm-6">
       <img src="imagens/ocean_ride_vista_frontal.png" alt="Ocean ride" />
@@ -615,7 +651,6 @@
       <h6>Side view of Ocean Ride</h6>
     </div>
   </div>
-
   <!--About Ocean Ride-->
   <div id="about-ocean-ride" class="container-fluid">
     <h1>1ST: WHAT IS THE <b>OCEAN RIDE?</b></h1>
@@ -678,6 +713,7 @@
     <img src="imagens/ocean_ride_vistas_tecnica-02.png" alt="Ocean Device sustainable" />
   </div>
   <!--Impact Section-->
+
   <div id="impact" class="container-fluid">
     <div class="row">
       <div class="col-sm-6">
